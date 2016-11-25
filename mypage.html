@@ -11,7 +11,7 @@
 
 
 
-<title>Publish your site on Github</title>
+<title>mypage</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -229,41 +229,29 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Publish your site on Github</h1>
+<h1 class="title toc-ignore">mypage</h1>
 
 </div>
 
 
-<div id="add-the-repository-to-github-desktop" class="section level3">
-<h3>Add the repository to Github Desktop</h3>
-<ol start="4" style="list-style-type: decimal">
-<li>If you can’t already see your project folder then add your project folder to github desktop. Write a quick message in Summary then Press commit to queue it up and then Publish/Sync. This will add the site to your github repositories.</li>
-</ol>
-<div class="figure">
-<img src="images/add_github_desktop.png" />
-
+<div id="this-is-my-web-page" class="section level2">
+<h2>This is my web page</h2>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)</code></pre>
+<pre><code>##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00</code></pre>
 </div>
-<ol start="5" style="list-style-type: decimal">
-<li>Github will allow you to publish project websites for each of your repositories (known as <code>github pages</code> or <code>gh-pages</code>). They will end up being published at <code>yourusername.github.io/repositoryname</code>.</li>
-</ol>
-<p>For example, the home for this website is <a href="https://poldham.github.io/minute_website/" class="uri">https://poldham.github.io/minute_website/</a></p>
-<div class="figure">
-<img src="images/website_address.png" />
-
-</div>
-<p>But, this is where we need to take care. In the image above on the left we can see that next to <code>Branch</code> it says <code>master</code>. Websites are published on the github pages branch (<code>gh-pages</code>) branch of a repository to keep them separate (because your repository data and your project website may be quite different things). So, your website is not yet published.</p>
-<p>To publish the website we need to go into <code>Settings</code> in our repository and then scroll down. In the image below, where you see <code>master</code> in your repo change the branch to <code>gh-pages</code>. Your simple website will now build at the address given. You are reading this online so it must do. <img src="images/website_gh_pages.png" /></p>
-<p>If you have forked and cloned this site then all should be good, because the master branch has been deleted leaving only the <code>gh-pages</code> branch. However, if you have started from scratch you will need the procedure above.</p>
-<ol start="6" style="list-style-type: decimal">
-<li>Troubleshooting. It can take a few minutes (but not long) for Github to recognise the website. If you see a not found message check three things.</li>
-</ol>
-<ul>
-<li>That you have a line saying <code>output_dir: &quot;.&quot;</code> at the bottom of <code>_site.yml</code>.</li>
-<li>That you have <code>.nojekyll</code> in your main site folder.</li>
-<li>That there is an index.html (you remembered to move it from the <code>_site</code> folder when you updated… easy to forget).</li>
-<li>That you have selected the <code>gh-pages</code> branch in <code>Settings</code> in your repo.</li>
-<li>If you are using this site as your basis make sure that you have forked and then cloned the repository (the fork makes it your copy, a clone is just a copy).</li>
-</ul>
+<div id="including-plots" class="section level2">
+<h2>Including Plots</h2>
+<p>You can also embed plots, for example:</p>
+<p><img src="mypage_files/figure-html/pressure-1.png" width="672" /></p>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 </div>
 
 
